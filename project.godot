@@ -1,0 +1,17 @@
+[gd_project]
+
+config_version=5
+_version_suffix="mono"
+
+[application]
+
+config/name="Escape From Brother"
+config/description="A tense escape game where you must complete random tasks to reach safety"
+run/main_scene="res://scenes/main_scene.tscn"
+config/features=PackedStringArray("4.0", "GL Compatibility")
+config/icon="res://assets/icon.svg"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
