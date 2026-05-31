@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3u8t1eqr55a4"]
+
+[ext_resource type="Script" path="res://scripts/intro_scene.gd"]
+
+[node name="IntroScene" type="Node"]
+script = ExtResource("intro_scene.gd")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color.BLACK
+
+[node name="DialogLabel" type="Label" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "3:00 AM...
+
+You're sleeping peacefully when suddenly you hear movement.
+
+Your older brother wakes up...
+
+Something's wrong with him. VERY wrong.
+
+He remembers... all the evil things.
+
+You need to RUN!"
+custom_minimum_size = Vector2(0, 0)
+alignment = 1
+vertical_alignment = 1
+add_theme_font_size_override("font_size", 32)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 7.0
+one_shot = true
