@@ -1,0 +1,25 @@
+# .gitignore for Godot projects
+
+# Import cache
+.godot/
+
+# Imported translations (automatically generated)
+*.translation
+
+# Mono-specific ignores
+mono_crash.*.json
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.sln.user
+*.vcxproj.user
+
+# Misc
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
